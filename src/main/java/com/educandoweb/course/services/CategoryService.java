@@ -12,15 +12,12 @@ import org.slf4j.helpers.Reporter;
 import com.educandoweb.course.entities.Category;
 import com.educandoweb.course.repositories.CategoryRepository;
 
-
 @Service
 public class CategoryService {
 
 	@Autowired
 	private CategoryRepository repository;
 
-	
-	
 	public List<Category> findAll(){
 		return repository.findAll();
 	}
